@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'description_place.dart';
+import 'review_list.dart';
 
 void main() => runApp(MyApp());
 
@@ -25,8 +26,8 @@ class MyApp extends StatelessWidget {
           appBar: AppBar(
             title: Text("Layout One"),
           ),
-          body: new DescriptionPlace(
-              "Bahamas", 4, "descripcion se puede hacer con una variable"),
+          //body: new DescriptionPlace("Bahamas", 4, "descripcion se puede hacer con una variable"),
+          body: ReviewList(),
         ));
   }
 }
