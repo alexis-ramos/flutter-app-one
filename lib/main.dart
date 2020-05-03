@@ -36,8 +36,8 @@ class MyApp extends StatelessWidget {
             children: <Widget>[
               ListView(
                 children: <Widget>[
-                  DescriptionPlace("Bahamas", 4,
-                      "descripcion se puede hacer con una variable"),
+                  DescriptionPlace("Andrea", 4,
+                      "Tu piel tostada y lisita me incita, me invita a cometer pecados contigo mi morenitay esa boquita que parece que me gritano es pa' menos que quiera tumbarle un beso de lengüita"),
                   ReviewList()
                 ],
               ),
