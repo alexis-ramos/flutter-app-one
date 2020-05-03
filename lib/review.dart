@@ -9,7 +9,7 @@ class Review extends StatelessWidget {
   double stars = 5;
   String comment = "There is an amazing place in ";
 
-  Review(this.pathImage, this.name, this.comment, this.details);
+  Review(this.pathImage, this.name, this.comment, this.details, this.stars);
   @override
   Widget build(BuildContext context) {
     // TODO: implement build

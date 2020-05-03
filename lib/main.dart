@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'description_place.dart';
 import 'review_list.dart';
+import 'gradient_back.dart';
+import 'header_appbar.dart';
 
-void main() => runApp(MyApp());
+void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+      statusBarColor: Colors.transparent,
+      statusBarBrightness: Brightness.light));
+  runApp(MyApp());
+}
 
 class MyApp extends StatelessWidget {
   // This widget is the root of your application.
@@ -23,11 +31,19 @@ class MyApp extends StatelessWidget {
           primarySwatch: Colors.blue,
         ),
         home: Scaffold(
-          appBar: AppBar(
-            title: Text("Layout One"),
-          ),
           //body: new DescriptionPlace("Bahamas", 4, "descripcion se puede hacer con una variable"),
-          body: ReviewList(),
+          body: Stack(
+            children: <Widget>[
+              ListView(
+                children: <Widget>[
+                  DescriptionPlace("Bahamas", 4,
+                      "descripcion se puede hacer con una variable"),
+                  ReviewList()
+                ],
+              ),
+              HeaderAppBar()
+            ],
+          ),
         ));
   }
 }
