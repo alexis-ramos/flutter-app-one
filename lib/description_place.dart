@@ -29,7 +29,7 @@ class DescriptionPlace extends StatelessWidget {
     );
 
     final star = Container(
-      margin: EdgeInsets.only(top: 323.0, right: 3.0),
+      margin: EdgeInsets.only(top: 360.0, right: 3.0),
       child: Icon(
         Icons.star,
         color: Color(0xFFf2C611),
@@ -48,7 +48,7 @@ class DescriptionPlace extends StatelessWidget {
     final title_stars = Row(
       children: <Widget>[
         Container(
-          margin: EdgeInsets.only(top: 320.0, left: 20.0, right: 20.0),
+          margin: EdgeInsets.only(top: 360.0, left: 20.0, right: 20.0),
           child: Text(
             namePlace,
             style: TextStyle(

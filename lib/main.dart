@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'description_place.dart';
-import 'review_list.dart';
-import 'gradient_back.dart';
-import 'header_appbar.dart';
+import 'coff33_trips.dart';
+import 'coffee_trips_copertino.dart';
 
 void main() {
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
@@ -30,21 +28,7 @@ class MyApp extends StatelessWidget {
           // is not restarted.
           primarySwatch: Colors.blue,
         ),
-        home: Scaffold(
-          //body: new DescriptionPlace("Bahamas", 4, "descripcion se puede hacer con una variable"),
-          body: Stack(
-            children: <Widget>[
-              ListView(
-                children: <Widget>[
-                  DescriptionPlace("Andrea", 4,
-                      "Tu piel tostada y lisita me incita, me invita a cometer pecados contigo mi morenitay esa boquita que parece que me gritano es pa' menos que quiera tumbarle un beso de lengüita"),
-                  ReviewList()
-                ],
-              ),
-              HeaderAppBar()
-            ],
-          ),
-        ));
+        home: CoffeeTripsCopertino());
   }
 }
 
