@@ -72,12 +72,12 @@ flutter:
   # see https://flutter.dev/custom-fonts/#from-packages
   assets:
     - assets/img/alexis.jpg
-    - assets/img/andrea1.jpeg
-    - assets/img/andrea2.jpeg
-    - assets/img/andrea3.jpeg
-    - assets/img/andrea4.jpeg
-    - assets/img/andrea5.jpeg
-    - assets/img/andrea6.jpeg
+    - assets/img/img-1.JPG
+    - assets/img/img-2.JPG
+    - assets/img/img-3.JPG
+    - assets/img/img-4.JPG
+    - assets/img/img-5.JPG
+    - assets/img/img-6.JPG
 
 
   fonts:
